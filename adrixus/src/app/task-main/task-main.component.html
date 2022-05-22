@@ -1,0 +1,21 @@
+
+<div>
+    <h2>Main Task component</h2>
+    <hr>
+<h3>Data from create task </h3>
+<ul>
+    <li *ngFor="let book of rcvBooksFrom">
+       Id: {{book.id}} | 
+       Name :{{book.name}} | <a [routerLink]="['/view',book.id]"> show details</a>
+    </li>
+</ul>
+
+<!-- Data recieve from create task component using parent-Child relationship  -->
+<app-create-task (sendbooksemit)="getDataFrom($event)"></app-create-task>
+<hr>
+</div>
+
+
+
+
+
