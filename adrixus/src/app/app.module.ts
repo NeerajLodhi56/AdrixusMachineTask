@@ -7,18 +7,22 @@ import { TaskMainComponent } from './task-main/task-main.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { ViewTaskComponent } from './view-task/view-task.component';
 import { ListTaskComponent } from './list-task/list-task.component';
-
+import { TempformComponent } from './tempform/tempform.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     TaskMainComponent,
     CreateTaskComponent,
     ViewTaskComponent,
-    ListTaskComponent
+    ListTaskComponent,
+    TempformComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

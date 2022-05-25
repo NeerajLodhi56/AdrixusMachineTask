@@ -1,0 +1,36 @@
+<h2>Template Driven form</h2>
+<div style="text-align: center;">
+
+<form #regisForm="ngForm" (ngSubmit)="register(regisForm)">
+
+<div>
+    First Name : <input type="text" placeholder="Enter your first name" name="fname" ngModel >
+</div>
+<div>
+    Last Name : <input type="text" placeholder="Enter your last name" name="lname" ngModel >
+</div>
+<div>
+    Age : <input type="text" placeholder="Enter your age" name="age" ngModel >
+</div>
+<div>
+    Email : <input type="text" placeholder="Enter your Email " name="email" ngModel >
+</div>
+<div>
+    Mobile No : <input type="text" placeholder="Enter your mobile no" name="mobn" ngModel >
+</div>
+<div>
+    <input type="submit" value="Save Data">
+    <input type="reset" value="Reset Data">
+</div>
+</form>
+<div>
+    <ul>
+        <li> {{rcvFormData.fname}}</li>
+        <li> {{rcvFormData.lname}}</li>
+        <li> {{rcvFormData.age}}</li>
+        <li> {{rcvFormData.email}}</li>
+        <li> {{rcvFormData.mobn}}</li>
+    </ul>
+</div>
+</div>
+
